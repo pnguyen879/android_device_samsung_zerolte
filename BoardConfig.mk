@@ -23,13 +23,13 @@
 # inherit from universal7420-common
 include device/samsung/universal7420-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/samsung/zerofltexx
+DEVICE_PATH := device/samsung/zeroflte
 
 # Include path
 TARGET_SPECIFIC_HEADER_PATH += $(DEVICE_PATH)/include
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := zeroflte,zerofltexx,zeroflteskt
+TARGET_OTA_ASSERT_DEVICE := zeroflte,zerofltexx,zeroflteskt,zerofltetmo,zerofltebmc,zerofltelgt,zerofltektt
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
@@ -49,4 +49,4 @@ BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
 
 # inherit from the proprietary version
-include vendor/samsung/zerofltexx/BoardConfigVendor.mk
+include vendor/samsung/zeroflte/BoardConfigVendor.mk

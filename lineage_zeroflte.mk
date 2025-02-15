@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/samsung/zerofltexx
+DEVICE_PATH := device/samsung/zeroflte
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
@@ -28,8 +28,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Set those variables here to overwrite the inherited values.
-PRODUCT_NAME := lineage_zerofltexx
-PRODUCT_DEVICE := zerofltexx
+PRODUCT_NAME := lineage_zeroflte
+PRODUCT_DEVICE := zeroflte
 PRODUCT_MODEL := SM-G920F
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung

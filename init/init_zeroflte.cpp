@@ -110,13 +110,6 @@ void vendor_load_properties()
         set_ro_product_prop("model", "SM-G920T");
         set_ro_product_prop("name", "zerofltetmo");
         gsm_properties("9");
-    } else if (bootloader.find("G920P") == 0) {
-        property_override("ro.build.description", "zeroflteskt-user 7.0 NRD90M G920PVPS4DRC2 release-keys");
-        set_ro_product_prop("device", "zeroflteskt");
-        set_ro_build_prop("fingerprint", "samsung/zeroflteskt/zeroflte:7.0/NRD90M/G920PVPS4DRC2:user/release-keys");
-        set_ro_product_prop("model", "SM-G920S");
-        set_ro_product_prop("name", "zeroflteskt");
-        gsm_properties("9");
     } else {
         gsm_properties("9");
     }
